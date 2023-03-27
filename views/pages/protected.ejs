@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="/css/protected.css" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Protect Route</title>
+  </head>
+  <body style="text-align: center">
+    <h1>Welcome <%= user.name%></h1>
+    <a href="/api/logout">Logout</a>
+    <p>
+      This is a protected route, and can only be accessed after authentication
+    </p>
+
+    <a href="/create">Add Todo</a>
+
+    <h3>Here are the todos</h3>
+    <% if(data.length == 0) { %>
+    <p>No todo yet</p>
+    <% } else { %> <% data.forEach((todo) => { %>
+    <div class="main">
+      <div>
+        <p id="title"><%= todo.title%></p>
+        <p id="desc"><%= todo.desc%></p>
+      </div>
+      <div>
+        <form
+          action="/api/todo/del/<%= todo.id %>?_method=DELETE"
+          method="post"
+        >
+          <input type="submit" id="del" value="Delete" />
+        </form>
+      </div>
+    </div>
+    <% }); %> <% } %>
+  </body>
+</html>

@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css?family=Ubuntu");
+
+body {
+  text-align: center;
+  background-color: rgb(224, 222, 219);
+}
+
+.main {
+  background-color: cadetblue;
+  margin: 10px auto;
+  border-radius: 10px;
+  width: 400px;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#title {
+  color: #e1fe5f;
+  font-family: "Ubuntu";
+  font: xx-large;
+}
+
+#del {
+  text-decoration: none;
+  background-color: #f85050;
+  padding: 8px;
+  color: #ffffff;
+  border-radius: 10px;
+}
+
+#del:hover {
+  background-color: #da5252;
+}

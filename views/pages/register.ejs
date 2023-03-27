@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="/css/reg.css" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+  </head>
+  <body>
+    <h1>Sign<span>Up</span></h1>
+    <section>
+      <form action="/api/register" method="post">
+        <div>
+          <label for="name">Name</label>
+          <br />
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Username"
+            autofocus
+            required
+          />
+        </div>
+        <div>
+          <label for="email">Email</label>
+          <br />
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Email ID"
+            required
+          />
+        </div>
+        <div>
+          <label for="Password">Name</label>
+          <br />
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="*******"
+            required
+          />
+        </div>
+        <div>
+          <button type="submit">Register</button>
+        </div>
+      </form>
+    </section>
+  </body>
+</html>

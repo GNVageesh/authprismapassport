@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css?family=Aclonica");
+/* @import url("https://fonts.googleapis.com/css?family=Roboto"); */
+
+body {
+  background-color: #ebebeb;
+  padding: 12px;
+}
+
+#title {
+  font-family: "Aclonica";
+  text-align: center;
+}
+
+.authLinks {
+  text-align: center;
+  margin-top: 50px;
+}
+
+a {
+  padding: 12px;
+  font-size: 30px;
+  text-decoration: none;
+  font-family: "Megrim";
+  font-weight: 300;
+  margin: 10px;
+}
+
+#login {
+  background-color: rgb(30, 93, 210);
+  border-radius: 10px;
+  color: #ebebeb;
+}
+
+#reg {
+  background-color: #026b18;
+  color: #ebebeb;
+  border-radius: 10px;
+}
+
+#sec {
+  background-color: #d1f506;
+  color: #3d3838;
+  border-radius: 10px;
+}

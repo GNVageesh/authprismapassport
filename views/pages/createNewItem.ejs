@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create Todo</title>
+  </head>
+  <body>
+    <h1>Create a new todo item</h1>
+    <form action="/api/todo/new" method="post">
+      <div class="">
+        <label for="title">Title</label>
+        <br />
+        <input
+          type="text"
+          name="title"
+          id="title"
+          placeholder="Enter Todo title"
+        />
+      </div>
+      <div class="">
+        <label for="desc">Title</label>
+        <br />
+        <input
+          type="text"
+          name="desc"
+          id="desc"
+          placeholder="Enter Todo description"
+        />
+      </div>
+      <div>
+        <input type="submit" value="Create" />
+      </div>
+    </form>
+  </body>
+</html>
